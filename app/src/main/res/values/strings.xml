@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Underwater World</string>
+
+    <string name="lives_format">Жизни: %d</string>
+    <string name="score_format">Очки: %d</string>
+    <string name="restart_button_label">Restart</string>
+    <string name="victory_message">You win!</string>
+    <string name="defeat_text">You lose!</string>
+    <string name="Left_button"><![CDATA[<]]></string>
+    <string name="Right_button"><![CDATA[>]]></string>
+    <string name="start_game">Start Game</string>
+    <string name="exit_dialog">Do you want to close applications?</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="quit">Quit</string>
+
+</resources>

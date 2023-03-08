@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sea">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_layout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_button_white"
+        android:layout_marginStart="@dimen/horizontal_12"
+        android:layout_marginEnd="@dimen/horizontal_12"
+        android:layout_marginTop="@dimen/vertical_4">
+
+        <TextView
+            android:id="@+id/score_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/score_format"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_24"
+            app:fontFamily="@font/san_francisco_sf_regular"/>
+
+        <TextView
+            android:id="@+id/lives_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lives_format"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_24"
+            app:fontFamily="@font/san_francisco_sf_regular"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_top_with_live">
+
+        <ImageView
+            android:id="@+id/submarine"
+            android:layout_width="@dimen/submarine_width"
+            android:layout_height="@dimen/submarine_height"
+            android:layout_gravity="bottom|center_horizontal"
+            android:src="@drawable/img_submarine" />
+
+        <View
+            android:id="@+id/obstacle_1"
+            android:layout_width="@dimen/mina"
+            android:layout_height="@dimen/mina"
+            android:layout_gravity="top|start"
+            android:background="@drawable/mina" />
+
+        <View
+            android:id="@+id/obstacle_2"
+            android:layout_width="@dimen/mina"
+            android:layout_height="@dimen/mina"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/mina" />
+
+        <View
+            android:id="@+id/obstacle_3"
+            android:layout_width="@dimen/mina"
+            android:layout_height="@dimen/mina"
+            android:layout_gravity="top|end"
+            android:background="@drawable/mina" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/move_left_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_button_white"
+                android:textSize="@dimen/text_size_34"
+                android:text="@string/Left_button" />
+
+            <Button
+                android:id="@+id/move_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_button_white"
+                android:textSize="@dimen/text_size_34"
+                android:text="@string/Right_button" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>
